@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Intro Web Component</title>
+        <style>
+            body
+            {
+                --wvn-button-color: blue; 
+            }
+            span{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Introduction...</h1>
+        <wvn-counter>
+            <span>Value: </span>
+            <span slot="suffix">°</span>
+        </wvn-counter><br />
+        <wvn-counter count="5"></wvn-counter><br />
+        <button>Hello</button>
+        <script type="module">
+            import './src/counter';
+        </script>
+    </body>
+</html>
